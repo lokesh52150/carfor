@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>All Cars — CARFOR</title>
+<meta name="description" content="Browse all cars on CARFOR. Filter by brand, budget, fuel and transmission.">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='42' fill='%23e8c972'/></svg>">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap row">
+    <a class="logo" href="index.html"><span class="dot"></span><b>CAR</b><span>FOR</span></a>
+    <button data-nav-toggle aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav id="main-nav">
+      <a href="index.html">Home</a>
+      <a href="cars.html" class="active">All Cars</a>
+      <a href="cars.html?sort=popular">Popular</a>
+      <a href="compare.html" class="nav-compare" data-compare-link>Compare <span data-compare-badge>0</span></a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html#inquiry" class="nav-cta">Get a Quote</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="sec tight">
+  <div class="wrap">
+    <div class="crumb"><a href="index.html">Home</a> / All Cars</div>
+    <div class="sec-head" style="margin-bottom:18px">
+      <div>
+        <span class="eyebrow">Inventory</span>
+        <h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">All cars</h1>
+        <p class="dim">Every model, real ex-showroom prices, updated for 2025.</p>
+      </div>
+    </div>
+
+    <div class="filters" id="filters">
+      <input type="search" id="f-q" placeholder="Search brand, model, type…" aria-label="Search">
+      <select id="f-brand" aria-label="Brand"><option value="">All brands</option></select>
+      <select id="f-budget" aria-label="Budget">
+        <option value="">Any budget</option>
+        <option value="0-800000">Under ₹8 Lakh</option>
+        <option value="800000-1200000">₹8–12 Lakh</option>
+        <option value="1200000-1800000">₹12–18 Lakh</option>
+        <option value="1800000-3000000">₹18–30 Lakh</option>
+        <option value="3000000-99999999">Above ₹30 Lakh</option>
+      </select>
+      <select id="f-fuel" aria-label="Fuel">
+        <option value="">Any fuel</option>
+        <option>Petrol</option><option>Diesel</option><option>CNG</option><option>Hybrid</option>
+      </select>
+      <select id="f-trans" aria-label="Transmission">
+        <option value="">Any transmission</option>
+        <option>Manual</option><option>Automatic</option><option>AMT</option><option>DCT</option><option>CVT</option><option>IVT</option>
+      </select>
+      <select id="f-sort" aria-label="Sort">
+        <option value="popular">Most popular</option>
+        <option value="price-asc">Price: low → high</option>
+        <option value="price-desc">Price: high → low</option>
+        <option value="rating">Top rated</option>
+        <option value="mileage">Best mileage</option>
+      </select>
+      <div class="result-line">
+        <div class="tags" style="margin:0" id="active-tags"></div>
+        <span id="result-count" class="dim">Loading…</span>
+      </div>
+    </div>
+
+    <div class="grid c3" id="cars-grid"></div>
+    <div class="empty" id="empty" hidden>
+      <h3>No cars match those filters</h3>
+      <p class="dim" style="margin:10px 0 18px">Try widening your budget or clearing the search.</p>
+      <button class="btn btn-s btn-sm" id="clear-all">Clear all filters</button>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="index.html" style="margin-bottom:14px"><span class="dot"></span><b>CAR</b><span>FOR</span></a>
+        <p class="muted" style="font-size:.9rem">India’s premium car discovery platform. Transparent prices, honest comparisons, zero pressure.</p>
+      </div>
+      <div>
+        <h5>Explore</h5>
+        <a href="cars.html">All cars</a>
+        <a href="cars.html?sort=price-asc">Under ₹10 Lakh</a>
+        <a href="cars.html?body=suv">SUVs</a>
+        <a href="cars.html?body=sedan">Sedans</a>
+        <a href="compare.html">Compare</a>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html#test-drive">Book a test drive</a>
+        <a href="contact.html#inquiry">Get a quote</a>
+      </div>
+      <div>
+        <h5>Weekly deals in your inbox</h5>
+        <form id="newsletter-form">
+          <input type="email" placeholder="you@email.com" aria-label="Email">
+          <button class="btn btn-p btn-sm" type="submit">Join</button>
+        </form>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© 2026 CARFOR. All prices ex-showroom, indicative.</span>
+      <span>Made in India · Privacy · Terms</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/919999999999?text=Hi%20CARFOR%2C%20I%20want%20help%20choosing%20a%20car" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1s-.5-.1-.7.2-.8 1-.9 1.1-.4.2-.7 0a8.2 8.2 0 0 1-2.4-1.5 9 9 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.6l.5-.6.3-.5v-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4A3.6 3.6 0 0 0 5.4 9c0 1.6 1.1 3.1 1.3 3.3a12.4 12.4 0 0 0 4.8 4.2c.7.3 1.2.5 1.6.6a3.9 3.9 0 0 0 1.8.1 3 3 0 0 0 2-1.4 2.5 2.5 0 0 0 .1-1.4zM12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2z"/></svg>
+</a>
+
+<script src="js/carart.js"></script>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+<script src="js/cars.js"></script>
+</body>
+</html>

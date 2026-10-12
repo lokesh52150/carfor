@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CARFOR — Find the car that fits your life</title>
+<meta name="description" content="CARFOR — explore, compare and buy the best cars in India. 28+ models across 10 brands.">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='42' fill='%23e8c972'/></svg>">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap row">
+    <a class="logo" href="index.html"><span class="dot"></span><b>CAR</b><span>FOR</span></a>
+    <button data-nav-toggle aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav id="main-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="cars.html">All Cars</a>
+      <a href="cars.html?sort=popular">Popular</a>
+      <a href="compare.html" class="nav-compare" data-compare-link>Compare <span data-compare-badge>0</span></a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html#inquiry" class="nav-cta">Get a Quote</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="hero-kick">India’s premium car marketplace</span>
+      <h1>Find the car that fits <em>your life</em>.</h1>
+      <p class="lede">Handpicked models, transparent pricing and side-by-side comparison — everything you need to buy your next car with total confidence.</p>
+      <div class="hero-cta">
+        <a class="btn btn-p" href="cars.html">Browse all cars</a>
+        <a class="btn btn-s" href="compare.html">Compare models</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>28+</strong><span>Car models</span></div>
+        <div><strong>10</strong><span>Brands</span></div>
+        <div><strong>5-star</strong><span>Safety picks</span></div>
+        <div><strong>24h</strong><span>Callback SLA</span></div>
+      </div>
+    </div>
+    <div class="hero-art" id="hero-art">
+      <div class="hero-chip a"><span class="star">★ 4.5</span><b>XUV700 AX7</b><span class="dim">from ₹14.99 Lakh</span></div>
+      <div class="hero-chip b"><span class="star">Most compared</span><b>Creta vs Seltos</b><span class="dim">this week</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <div>
+        <span class="eyebrow">Featured</span>
+        <h2>Featured cars</h2>
+        <p class="dim">Editor picks with the best blend of value, safety and features.</p>
+      </div>
+      <a class="btn btn-s btn-sm" href="cars.html">View all →</a>
+    </div>
+    <div class="grid c4" id="featured-grid" data-reveal></div>
+  </div>
+</section>
+
+<section class="sec band-light" id="popular">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <div>
+        <span class="eyebrow">Trending</span>
+        <h2>Most popular right now</h2>
+        <p class="dim">What India is searching, comparing and test-driving this month.</p>
+      </div>
+      <a class="btn btn-s btn-sm" href="cars.html?sort=popular">See ranking →</a>
+    </div>
+    <div class="grid c4" id="popular-grid" data-reveal></div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <div>
+        <span class="eyebrow">Brands</span>
+        <h2>Shop by brand</h2>
+      </div>
+    </div>
+    <div class="brands" id="brand-grid" data-reveal></div>
+  </div>
+</section>
+
+<section class="sec tight">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <div>
+        <span class="eyebrow">How it works</span>
+        <h2>From research to keys in 4 steps</h2>
+      </div>
+    </div>
+    <div class="steps" data-reveal>
+      <div class="step"><div class="n">1</div><h4>Explore</h4><p>Browse 28+ models with real prices, specs and side profiles.</p></div>
+      <div class="step"><div class="n">2</div><h4>Compare</h4><p>Put up to 3 cars head-to-head on price, power and safety.</p></div>
+      <div class="step"><div class="n">3</div><h4>Book a drive</h4><p>Pick a date and city — we arrange the test drive near you.</p></div>
+      <div class="step"><div class="n">4</div><h4>Drive home</h4><p>Close the deal with your dealer. We stay on call till delivery.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="panel" data-reveal style="display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center">
+      <div>
+        <span class="eyebrow">Buyer stories</span>
+        <p class="quote">“Compared Creta, Seltos and Grand Vitara side by side on CARFOR, booked a drive the same weekend, and drove home the Hybrid two weeks later.”</p>
+        <p class="dim" style="margin-top:14px">— Ananya R., Bengaluru · Grand Vitara Zeta AT</p>
+        <div class="rating-bar" style="max-width:260px"><i style="width:92%"></i></div>
+        <p class="dim" style="margin-top:8px;font-size:.85rem">4.6 average from 12,400+ verified buyers</p>
+      </div>
+      <div id="quote-art"></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec band-light" id="inquiry">
+  <div class="wrap" style="max-width:760px">
+    <div class="panel" data-reveal>
+      <span class="eyebrow">Quick quote</span>
+      <h2 style="margin-bottom:8px">Tell us what you want</h2>
+      <p class="dim" style="margin-bottom:20px">Share a few details — our car expert calls you within 24 hours with the best on-road quote.</p>
+      <form id="inquiry-form" class="form-grid" novalidate>
+        <div class="field"><label for="q-name">Full name</label><input id="q-name" name="name" type="text" placeholder="e.g. Rahul Sharma" autocomplete="name"></div>
+        <div class="field"><label for="q-email">Email</label><input id="q-email" name="email" type="email" placeholder="you@email.com" autocomplete="email"></div>
+        <div class="field"><label for="q-phone">Mobile</label><input id="q-phone" name="phone" type="tel" placeholder="10-digit mobile" autocomplete="tel"></div>
+        <div class="field"><label for="q-car">Car of interest</label><select id="q-car" name="car"></select></div>
+        <div class="field full"><button class="btn btn-p" type="submit">Request callback</button></div>
+      </form>
+      <div class="success" data-success hidden>
+        <strong>✓ Request received</strong>
+        <p style="margin:8px 0 0"><span data-msg></span></p>
+        <p style="margin:6px 0 0">Reference: <span class="code" data-ref></span></p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="index.html" style="margin-bottom:14px"><span class="dot"></span><b>CAR</b><span>FOR</span></a>
+        <p class="muted" style="font-size:.9rem">India’s premium car discovery platform. Transparent prices, honest comparisons, zero pressure.</p>
+      </div>
+      <div>
+        <h5>Explore</h5>
+        <a href="cars.html">All cars</a>
+        <a href="cars.html?sort=price-asc">Under ₹10 Lakh</a>
+        <a href="cars.html?body=suv">SUVs</a>
+        <a href="cars.html?body=sedan">Sedans</a>
+        <a href="compare.html">Compare</a>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html#test-drive">Book a test drive</a>
+        <a href="contact.html#inquiry">Get a quote</a>
+        <a href="index.html#popular">Trending</a>
+      </div>
+      <div>
+        <h5>Weekly deals in your inbox</h5>
+        <form id="newsletter-form">
+          <input type="email" placeholder="you@email.com" aria-label="Email">
+          <button class="btn btn-p btn-sm" type="submit">Join</button>
+        </form>
+        <p class="dim" style="font-size:.8rem;margin-top:10px">No spam. Unsubscribe anytime.</p>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© 2026 CARFOR. All prices ex-showroom, indicative.</span>
+      <span>Made in India · Privacy · Terms</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/919999999999?text=Hi%20CARFOR%2C%20I%20want%20help%20choosing%20a%20car" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1s-.5-.1-.7.2-.8 1-.9 1.1-.4.2-.7 0a8.2 8.2 0 0 1-2.4-1.5 9 9 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.6l.5-.6.3-.5v-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4A3.6 3.6 0 0 0 5.4 9c0 1.6 1.1 3.1 1.3 3.3a12.4 12.4 0 0 0 4.8 4.2c.7.3 1.2.5 1.6.6a3.9 3.9 0 0 0 1.8.1 3 3 0 0 0 2-1.4 2.5 2.5 0 0 0 .1-1.4zM12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2z"/></svg>
+</a>
+
+<script src="js/carart.js"></script>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>
